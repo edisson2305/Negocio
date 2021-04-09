@@ -5,7 +5,11 @@
  */
 package mvc;
 
-import vista.vistaPersona;
+
+import vista.vistaLogin;
+
+
+
 
 /**
  *
@@ -14,12 +18,8 @@ import vista.vistaPersona;
 public class MVC {
 
     public static void main(String[] args) {
-        
-         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new vistaPersona().setVisible(true);
-            }
-        });
-        }
+
+        vistaLogin vl = new vistaLogin();
+        vl.setVisible(true);
     }
+}

@@ -13,107 +13,65 @@ import java.util.Date;
  * @author Steve
  */
 public class Artista {
-
-    private String cedula;
-    private String nombres;
-    private String apellidos;
-    private Date fechanacimiento;
-    private int edad;
-    private String telefono;
-    private String tipoArte;
-    private String sexo;
-    private Image foto;
+    
+    private String codArtista;
+    private String tipoObra;
+    private String cedulaFK;
+    private Double precio;
     
     
     public Artista() {
     }
-    
-    public Artista(String cedula, String nombres, String apellidos, Date fechanacimiento, int edad, String telefono, String tipoArte, String sexo, Image foto) {
-        this.cedula = cedula;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.fechanacimiento = fechanacimiento;
-        this.edad = edad;
-        this.telefono = telefono;
-        this.tipoArte = tipoArte;
-        this.sexo = sexo;
-        this.foto = foto;
+
+    public Artista(String codArtista) {
+        this.codArtista = codArtista;
     }
 
-    public String getCedula() {
-        return cedula;
+    public Artista(String codArtista, String tipoObra, String cedulaFK, Double precio) {
+        this.codArtista = codArtista;
+        this.tipoObra = tipoObra;
+        this.cedulaFK = cedulaFK;
+        this.precio = precio;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public String getCodArtista() {
+        return codArtista;
     }
 
-    public String getNombres() {
-        return nombres;
+    public void setCodArtista(String codArtista) {
+        this.codArtista = codArtista;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public String getTipoObra() {
+        return tipoObra;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public void setTipoObra(String tipoObra) {
+        this.tipoObra = tipoObra;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public String getCedulaFK() {
+        return cedulaFK;
     }
 
-    public Date getFechanacimiento() {
-        return fechanacimiento;
+    public void setCedulaFK(String cedulaFK) {
+        this.cedulaFK = cedulaFK;
     }
 
-    public void setFechanacimiento(Date fechanacimiento) {
-        this.fechanacimiento = fechanacimiento;
+    public Double getPrecio() {
+        return precio;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getTipoArte() {
-        return tipoArte;
-    }
-
-    public void setTipoArte(String tipoArte) {
-        this.tipoArte = tipoArte;
-    }
-
-    public String getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
-    }
-
-    public Image getFoto() {
-        return foto;
-    }
-
-    public void setFoto(Image foto) {
-        this.foto = foto;
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
     
     
+   
+
     
+    
+  
     
 
 }

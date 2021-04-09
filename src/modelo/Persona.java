@@ -22,20 +22,24 @@ public class Persona {
     private String telefono;
     private String sexo;
     private Image foto;
+    private String usuario;
+    private String contraseña;
 
     public Persona() {
     }
-    
 
-    public Persona(String cedula, String nombres, String apellidos, Date fechanacimiento, String telefono, String sexo, Image foto) {
+    public Persona(String cedula, String nombres, String apellidos, Date fechanacimiento, String telefono, String sexo, String usuario, String contraseña) {
         this.cedula = cedula;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.fechanacimiento = fechanacimiento;
         this.telefono = telefono;
         this.sexo = sexo;
-        this.foto = foto;
+        this.usuario = usuario;
+        this.contraseña = contraseña;
     }
+    
+
 
     
     public String getCedula() {
@@ -100,6 +104,22 @@ public class Persona {
 
     public void setFoto(Image foto) {
         this.foto = foto;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
     
     
